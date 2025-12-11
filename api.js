@@ -24,7 +24,7 @@ app.use(
 const routes = require("./routes/index");
 app.use("/", routes);
 
-const PORT = process.env.PORT || 5055;
+const PORT = process.env.PORT;
 
 
 app.listen(PORT, () => {
