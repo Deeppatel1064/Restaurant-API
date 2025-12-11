@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const database = require("./config/db");
+require('dotenv').config(); 
+
 global.ResponseController = require("./controller/responseController");
 
 global.db = database.connectDb();
