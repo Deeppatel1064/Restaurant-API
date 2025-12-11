@@ -22,7 +22,10 @@ app.use(
 const routes = require("./routes/index");
 app.use("/", routes);
 
-app.listen(5055, () => {
+const PORT = process.env.PORT || 5055;
+
+
+app.listen(PORT, () => {
   console.log("Server running on port 5055");
 });
 
